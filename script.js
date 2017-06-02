@@ -37,7 +37,7 @@ function change() {
         state = school();
     } else if(state == 'Course') {
         state = course();
-    } else if(state == 'Programming Language') {
+    } else if(state == 'Language') {
         state = lang();
     } else if(state == 'Operating System') {
         state = os();
@@ -127,7 +127,7 @@ function birthday() {
         text[0].style.fontSize = '10vmax';
     }
     for (var i = 0; i < capt.length; i++) {
-        capt[0].innerHTML = "I was born on March 11, 1998";
+        capt[0].innerHTML = "Born on March 11, 1998";
     }
     return 'Gender';
 }
@@ -152,7 +152,7 @@ function gender() {
         text[0].style.fontSize = '10vmax';
     }
     for (var i = 0; i < capt.length; i++) {
-        capt[0].innerHTML = "Nothing Else";
+        capt[0].innerHTML = "😄";
     }
     return 'School';
 }
@@ -198,7 +198,7 @@ function course() {
 
     text = document.getElementsByClassName('welcome');
     capt = document.getElementsByClassName('caption');
-    document.getElementById('button1').innerHTML = "WHAT IS YOUR FAVORITE PROGRAMMING LANGUAGE?";
+    document.getElementById('button1').innerHTML = "WHAT LANGUAGES DO YOU SPEAK?";
     for (var i = 0; i < text.length; i++) {
         text[0].innerHTML = 'Course';
         text[0].style.fontSize = '10vmax';
@@ -206,7 +206,7 @@ function course() {
     for (var i = 0; i < capt.length; i++) {
         capt[0].innerHTML = "BS Computer Science III";
     }
-    return 'Programming Language';
+    return 'Language';
 }
 function lang() {
     var ht = document.getElementsByTagName('html');
@@ -225,11 +225,11 @@ function lang() {
     capt = document.getElementsByClassName('caption');
     document.getElementById('button1').innerHTML = "WHAT IS YOUR FAVORITE OPERATING SYSTEM?";
     for (var i = 0; i < text.length; i++) {
-        text[0].innerHTML = 'Programming Language';
+        text[0].innerHTML = 'Language';
         text[0].style.fontSize = '8vmax';
     }
     for (var i = 0; i < capt.length; i++) {
-        capt[0].innerHTML = "Python, JavaScript, C, C++, Swift and definitely not Java.";
+        capt[0].innerHTML = "3 <b>Spoken</b> (English, Tagalog, Cebuano), 5 <b>Written</b> (C, C++, Java, Python, JavaScript)";
     }
     return 'Operating System';
 }
@@ -254,7 +254,7 @@ function os() {
         text[0].style.fontSize = '10vmax';
     }
     for (var i = 0; i < capt.length; i++) {
-        capt[0].innerHTML = "Linux, macOS and not Windows";
+        capt[0].innerHTML = "Linux, and macOS. I care less about Windows tho. 😄";
     }
     return 'More Info';
 }
@@ -282,7 +282,7 @@ function moreinfo() {
         text[0].style.fontSize = '8vmax';
     }
     for (var i = 0; i < capt.length; i++) {
-        capt[0].innerHTML = "Here is my other information.";
+        capt[0].innerHTML = "";
     }
     return 'Color';
 }
@@ -302,7 +302,8 @@ function colorchanger() {
 
     text = document.getElementsByClassName('welcome');
     capt = document.getElementsByClassName('caption');
-    document.getElementById('button1').innerHTML = "LET'S DO IT AGAIN";
+    document.getElementById('button1').innerHTML = "CHECK MY OTHER STUFF ON GITHUB";
+    document.getElementById('button1').setAttribute('onclick', 'location.href="https://github.com/generil/work-portfolio"');
     for (var i = 0; i < text.length; i++) {
         text[0].innerHTML = 'Colora';
         text[0].style.fontSize = '10vmax';
