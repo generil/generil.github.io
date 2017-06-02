@@ -229,7 +229,7 @@ function lang() {
         text[0].style.fontSize = '8vmax';
     }
     for (var i = 0; i < capt.length; i++) {
-        capt[0].innerHTML = "3 <b>Spoken</b> (English, Tagalog, Cebuano), 5 <b>Written</b> (C, C++, Java, Python, JavaScript)";
+        capt[0].innerHTML = "3 <b>Spoken and Written</b> (English, Tagalog, Cebuano), and 5 <b>for Programming</b> (C, C++, Java, Python, JavaScript, HTML, CSS)";
     }
     return 'Operating System';
 }
